@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    color: white;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: #333647;
+    font-family: cursive;
+}
+
+.profile {
+    background-color: #373944;
+    height: 50vh;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    background-color: #505888;
+}
+
+.navbar span a {
+    margin: 7px 34px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    color: white;
+}
+
+.navbar ul a {
+    text-decoration: none;
+}
+
+.navbar ul li {
+    margin: 7px 42px;
+    color: white;
+    font-family: cursive;
+    list-style-type: none;
+}
+
+.profile h1 {
+    font-size: 18px;
+    margin-left: 90px;
+padding-top: 34px;
+}
+
+.profile h2 {
+    font-size: 33px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.profile h3 {
+    font-size: 17px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.profile p {
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.pic {
+    position: absolute;
+    top: 130px;
+    right: 200px;
+}
+
+.pic img {
+    width: 300px;
+}
+
+.services {
+    color: white;
+    background-color: #4e5269;
+    height: 50vh;
+    display: flex;
+}
+
+.first h1 {
+    font-size: 22px;
+    position: absolute;
+    top: 510px;
+    right: 620px;
+}
+
+.first p {
+    width: 550px;
+    position: absolute;
+    top: 550px;
+    right: 212px;
+}
+
+.video video {
+    width: 400px;
+    position: absolute;
+    top: 510px;
+    left: 150px;
+    border-radius: 24px;
+}
+
+.second {
+    background-color: #636885;
+    height: 50vh;
+    color: white;
+    padding: 20px 10px;
+}
+
+.second h1 {
+    font-size: 18px;
+    margin-left: 90px;
+    padding-top: 34px;
+}
+
+.second h2 {
+    font-size: 33px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.second h3 {
+    font-size: 17px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.second p {
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+
+.third {
+    color: white;
+    background-color: #2f334a;
+    height: 80vh;
+    display: flex;
+}
+
+.third h2 {
+    font-size: 40px;
+    margin-left: 120px;
+    padding: 40px 0;
+}
+
+.project1 {
+    color: white;
+
+}
+
+.project1 img {
+    height: 240px;
+    width: 450px;
+    margin-left: 150px;
+}
+
+.project1 h3 {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.project1 p {
+    margin-left: 150px;
+    width: 450px;
+}
+
+.project2 {
+    color: white;
+    margin: 128px 100px;
+}
+
+.project2 p {
+    width: 450px;
+}
+
+.project2 img {
+    width: 450px;
+
+}
+
+.project2 h3 {
+
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #505888;
+    color: #fff;
+    padding: 20px 80px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.ham {
+    display: none;
+}
+
+.cross {
+    display: none;
+}
+.nav span a{
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .profile {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+        z-index: 0;
+    }
+    .profile > div{
+        margin-left: -64px;
+    }
+    .pic{
+        position: relative;
+        top: 30px;
+        left: 120px;
+    }
+.pic img{
+    width: 150px;
+}
+    .navbar {
+        height: 10vh;
+        justify-content: space-between;
+        position: relative;
+    }
+.nav span a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 34px;
+    font-family: cursive;
+  
+}
+    .nav {
+        height:70vh;
+        width: 250px;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.2s;
+        z-index: 1;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 7px;
+    }
+
+    .ham {
+        display: block;
+        filter: invert(1);
+        margin-left: 50px;
+        cursor: pointer;
+        margin-right: 50px;
+
+    }
+    .cross{
+        display: block;
+        filter: invert(1);
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        left: 200px;
+
+    }
+    .services{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+    }
+    .first{
+        position: absolute;
+        top: 80px;
+    }
+    .video{
+        position: absolute;
+        left: -130px;
+        top: 80px;
+
+    }
+    .video video{
+        width: 370px;
+    }
+}
